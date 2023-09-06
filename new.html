@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-RPC Response UI</title>
+    <style>
+        /* Add some basic CSS styling for the UI */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JSON-RPC Response</h1>
+        <div class="response">
+            <!-- Display the JSON-RPC response data -->
+            <pre>
+{
+    "jsonrpc": "2.0",
+    "id": null,
+    "error": {
+        "code": -32603,
+        "message": "Internal Error",
+        "data": {
+            "error_id": "2c6dc075-49d4-4d3a-a67d-394fbd95b1b3",
+            "jussi_request_id": "000076276277132604"
+        }
+    }
+}
+            </pre>
+        </div>
+        <!-- You can add more UI elements to display specific parts of the response if needed -->
+    </div>
+</body>
+</html>
+
